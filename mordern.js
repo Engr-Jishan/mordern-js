@@ -22,14 +22,27 @@
 
 // javaScript.printLibraries();
 
-var javaScript = {
+// var javaScript = {
+//     name: "javaScript",
+//     libraries: ["React", "Angular", "Vue"],
+//     printLibraries: function () {
+//         this.libraries.forEach(function (a) {
+//             console.log(`${this.name} loves ${a}`);
+//         });
+//     },
+// };
+
+// javaScript.printLibraries();
+
+// Another arrow function
+var javascript = {
     name: "javaScript",
+    from: "Also",
     libraries: ["React", "Angular", "Vue"],
-    printLibraries: function () {
-        this.libraries.forEach(function (a) {
-            console.log(`${this.name} loves ${a}`);
-        });
+    librariesPrint: function () {
+        this.libraries.forEach((a) => console.log(`${this.name}
+        ${this.from} loves ${a}`));
     },
 };
 
-javaScript.printLibraries();
+javascript.librariesPrint();
